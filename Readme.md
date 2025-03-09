@@ -3,7 +3,7 @@
 Ce projet est une implémentation de l'injection de dépendances dynamique en Java. L'objectif est de gérer les dépendances entre différents composants d'un système logiciel de manière efficace.
 
 ## Fonctionnalités Principales
-
+- **Injection de Dépendances Dynamique** : Permet de gérer les dépendances entre les composants via des liaisons statiques.
 - **Injection de Dépendances Dynamique** : Permet de gérer les dépendances entre les composants sans les lier statiquement.
 - **Modularité** : Favorise la modularité et la réutilisation du code.
 
