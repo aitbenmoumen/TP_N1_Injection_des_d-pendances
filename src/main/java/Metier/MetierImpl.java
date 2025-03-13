@@ -1,6 +1,8 @@
 package Metier;
 
 import DAO.IDao;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 /**
  *  L'idee princiale c'est le fait qu'une classe depend que des intefaces
@@ -9,7 +11,10 @@ import DAO.IDao;
  *  et j'affecte une objet via les setteurs ou constructeur
  */
 
+@Component("metier")
 public class MetierImpl implements IMetier {
+
+    @Autowired   // cherche un objet de type DAO et l'inject dans dao
     private IDao dao;
     /**
      * Instancier une interface afin d'avoir un couplage faible

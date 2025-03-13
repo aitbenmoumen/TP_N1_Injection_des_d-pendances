@@ -17,9 +17,5 @@
         <constructor-arg ref="dao"></constructor-arg>
     </bean>
 
-    <!--
-
-
-    -->
 
 </beans>
