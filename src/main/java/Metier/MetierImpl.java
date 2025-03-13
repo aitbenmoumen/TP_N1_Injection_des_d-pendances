@@ -24,6 +24,7 @@ public class MetierImpl implements IMetier {
     public MetierImpl(IDao dao) {
         this.dao = dao; // Injection via constructeur
     }
+    public MetierImpl() {   }
     /**
      * Injection par setteur
      */
