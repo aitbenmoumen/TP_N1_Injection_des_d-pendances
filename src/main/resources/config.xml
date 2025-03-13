@@ -4,13 +4,22 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- Creation des objets  -->
-    <bean id="dao" class="DAO.DaoImpl"></bean>
+    <bean id="dao" class="ext.DaoImplSpring"></bean>
     <!-- injection via un setteur metier.setDao(dao) -->
     <bean id="metier" class="Metier.MetierImpl">
         <!-- property pour utiliser les setteurs  -->
         <!-- c'est obligatoire de respecter les noms -->
         <!-- <property name="Nom de la var dans la classe" ref="id de l'objet qu'on veux passer en parametre"></property> -->
-        <property name="dao" ref="dao"></property>
+
+        <!-- <property name="dao" ref="dao"></property> -->
+
+        <!-- En utilisant les constructeurs -->
+        <constructor-arg ref="dao"></constructor-arg>
     </bean>
+
+    <!--
+
+
+    -->
 
 </beans>
